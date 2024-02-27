@@ -22,7 +22,9 @@ while True:
       print(i)
   elif cmd[:8] == "generate":
     if cmd[9:] == "letter":
-      print(letterGenerate)
+      length = int(input("Length = "))
+      length = length[:1]
+      print(letterGenerate[:length])
   else:
     if len(cmd.strip()) != 0:
       print(cmd,"is not a valid command.")
